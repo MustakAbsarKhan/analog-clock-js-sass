@@ -21,9 +21,16 @@ body{
         color:$text-color;
         position: absolute;
         left:22px;
-        top:-100px;
+        top:-120px;
         text-decoration: underline;
-    }
+    };
+
+    & #switch-mode{
+        position: absolute;
+        left:120px;
+        top:-55px;
+    };
+
     & #hour-tick{
         background: color(hour);
         transform-origin: 0% 100%;

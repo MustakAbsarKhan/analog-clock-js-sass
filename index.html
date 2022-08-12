@@ -7,11 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./slider/modeswitch.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analog Clock</title>
 </head>
 <body>
     <div id="clock-container">
+        <div id="switch-mode">
+            <!-- Rounded switch -->
+            <label class="switch">
+            <input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="large" id="togBtn" name="status" value="1" onclick="getValue()">
+            <span class="slider round"></span>
+      </label>
+        </div>
         <h1 class="heading">Analog Calculator</h1>
         <div id="hour-tick"></div>
         <div id="minute-tick"></div>
@@ -39,5 +47,6 @@
         </div>
     </div>
     <script src="./dist/js/analogclock.js"></script>
+    <script src="./slider/modeswitch.js"></script>
 </body>
 </html>

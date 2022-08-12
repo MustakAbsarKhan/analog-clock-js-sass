@@ -19,8 +19,13 @@ body {
   color: white;
   position: absolute;
   left: 22px;
-  top: -100px;
+  top: -120px;
   text-decoration: underline;
+}
+#clock-container #switch-mode {
+  position: absolute;
+  left: 120px;
+  top: -55px;
 }
 #clock-container #hour-tick {
   background: #28FFBF;
