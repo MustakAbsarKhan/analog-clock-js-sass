@@ -18,7 +18,7 @@ body {
 #clock-container .heading {
   color: white;
   position: absolute;
-  left: 22px;
+  left: 50px;
   top: -120px;
   text-decoration: underline;
 }
