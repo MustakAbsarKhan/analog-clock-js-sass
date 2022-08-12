@@ -1,0 +1,15 @@
+//clock tick positioning
+@mixin tick-position ($height,$width,$left,$bottom,$position){
+    height: $height;
+    width: $width;
+    left: $left;
+    bottom: $bottom;
+    position: $position;
+}
+
+@mixin hour-name($position,$left,$top,$bottom){
+    position: $position;
+    left: $left;
+    top: $top;
+    bottom: $bottom;
+}

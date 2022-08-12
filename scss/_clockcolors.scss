@@ -1,0 +1,16 @@
+$background-color:rgb(43,43,43);
+$text-color:white;
+//colors of different clock element
+$clock-colors:(
+    "border":rgb(252,255,55),
+    "second":#3EDBF0,
+    "minute":#FF0075,
+    "hour":#28FFBF
+);
+
+//functions
+
+//colors of different elements of clock is called here
+@function color($color-for){
+    @return map-get($map: $clock-colors, $key: $color-for);
+};
