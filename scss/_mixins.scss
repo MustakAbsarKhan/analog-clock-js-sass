@@ -13,3 +13,27 @@
     top: $top;
     bottom: $bottom;
 };
+
+@mixin minifiedversion {
+    @media (max-width:600px) and (min-width:511px) {
+        @content;
+    };
+};
+
+@mixin minifiedversion2 {
+    @media (max-width:510px) and (min-width:471px) {
+        @content;
+    };
+};
+
+@mixin minifiedversion3 {
+    @media (max-width:415px) and (min-width:0px) {
+        @content;
+    };
+};
+
+@mixin minifiedversion4 {
+    @media (max-width:470px) and (min-width:416px) {
+        @content;
+    };
+};

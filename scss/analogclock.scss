@@ -17,6 +17,18 @@ body{
     position: absolute;
     color:$text-color;
 
+    @include minifiedversion{
+        right:100px;
+    };
+
+    @include minifiedversion2{
+        right:100px;
+    };
+
+    @include minifiedversion4{
+        right: 50px;
+    }
+
     & .heading{
         color:$text-color;
         position: absolute;
@@ -109,6 +121,18 @@ body{
         top:120%;
         & a{
             color:color(border);
-        }
-    }
+        };
+        @include minifiedversion2{
+            width: 400px;
+            left: -30px;
+        };
+        @include minifiedversion3{
+            width: 370px;
+            left:-40px;
+        };
+        @include minifiedversion4{
+            width: 370px;
+            left: -40px;
+        };
+    };
 };
